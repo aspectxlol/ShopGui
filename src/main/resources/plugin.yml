@@ -1,0 +1,12 @@
+name: FixmcShopGui
+version: '${project.version}'
+main: com.aspectx.fixmc.fixmcshopgui.FixmcShopGui
+api-version: 1.17
+description: a Shop Gui Commision For FixMC
+commands:
+  shop:
+    description: A Shop Command
+    usage: /shop
+    permission: FixMC.shop
+    aliases: [sh]
+    permission-message: insufficient Permmisions
