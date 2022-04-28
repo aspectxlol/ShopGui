@@ -3,6 +3,7 @@ version: '${project.version}'
 main: com.aspectx.fixmc.fixmcshopgui.FixmcShopGui
 api-version: 1.17
 description: a Shop Gui Commision For FixMC
+softdepend: [Vault]
 commands:
   shop:
     description: A Shop Command

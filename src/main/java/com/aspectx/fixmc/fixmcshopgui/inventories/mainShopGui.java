@@ -1,14 +1,8 @@
 package com.aspectx.fixmc.fixmcshopgui.inventories;
 
-import com.aspectx.fixmc.fixmcshopgui.itemManager.FixItemCreator;
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
-import org.bukkit.inventory.ItemStack;
-
-import java.util.Collections;
-
 import static com.aspectx.fixmc.fixmcshopgui.itemManager.Items.*;
 
 public class mainShopGui implements InventoryHolder{

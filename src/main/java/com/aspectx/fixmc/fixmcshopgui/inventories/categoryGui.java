@@ -9,17 +9,21 @@ import org.bukkit.inventory.InventoryHolder;
 import static com.aspectx.fixmc.fixmcshopgui.itemManager.Items.noItem;
 
 public class categoryGui implements InventoryHolder {
-    FixmcShopGui fixmcShopGui = new FixmcShopGui();
-    FileConfiguration config = fixmcShopGui.getConfig();
+    private FixmcShopGui fixmcShopGui;
+    FileConfiguration config;
     public Inventory inv;
 
-    public categoryGui(String Category) {
+    public categoryGui(String Category, FixmcShopGui fixmc) {
+        this.fixmcShopGui = fixmc;
+        this.config = fixmc.getConfig();
         inv = Bukkit.createInventory(this, 54, Category + "Shop");
         init(Category);
     }
 
     private void init(String Category) {
-        inv.setItem(1, noItem);
+        for (int i = 0; i < 9; i++) {
+            inv.setItem(i, noItem);
+        }
     }
 
     @Override

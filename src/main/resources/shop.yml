@@ -1,0 +1,12 @@
+shop:
+  Blocks:
+    Grass:
+      item: Grass_Block
+      price:
+        buy: 10
+        sell: 5
+    Dirt:
+      item: Dirt_Block
+      price:
+        buy: 5
+        sell: 2
